@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIPHY</title>
+    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAD6/v0AAAAAAP7//wAJCQkA+Pz8APr8/AD8/v4A8/T0APn+/QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmYkZmZmZmZmZmMWZmZmZmZmZoFmZmZmZmZmYBZmZmZmYXYmFmZmZmZhZRYmZmZmZmZmFmJmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/media.css">
+</head>
+
+<body>
+    <div id="bg_container">
+        <div id="bg_glow">
+    <div class="container">
+        <h1 class="transparent-text shadow-text">( ･ω･)☞ GIPHY! ʕ ᵔᴥᵔ ʔ </h1>
+        <canvas id="canvas"></canvas>
+        <div class="control">
+            
+            <input type="text" class="text" placeholder="Enter to search" required>
+            <input type="number" class="count" id="count" value="1" min="0" required>
+            <input type="range" class="range" id="range" min="0" max="10" list="tickmarks" value="1" oninput="" required>
+            <datalist id="tickmarks">
+                <option value="0" label="0">
+                <option value="1" label="1">
+                <option value="2" label="2">
+                <option value="3" label="3">
+                <option value="4" label="4">
+                <option value="5" label="5">
+                <option value="6" label="6">
+                <option value="7" label="7">
+                <option value="8" label="8">
+                <option value="9" label="9">
+                <option value="10" label="10">
+            </datalist>
+
+            <!-- <input type="text"> -->
+
+            <button class="search">Search</button>
+
+        </div>
+
+        <div class="categoriesWrap">
+
+        </div>
+
+
+        <div class="output">
+
+        </div>
+
+    </div>
+    </div>
+    </div>
+
+
+    <script src="./neonLine.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

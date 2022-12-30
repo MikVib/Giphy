@@ -1,0 +1,87 @@
+/* Desktop */
+@media screen and (max-width:1200px) {
+    .container {
+        max-width: 992px;
+    }
+}
+
+/* Desktop */
+
+/* IPAD-PRO */
+
+@media screen and (max-width:1024px) {
+    .container {
+        max-width: 816px;
+    }
+}
+
+/* IPAD-PRO */
+
+/* Планшеты и нэтбуки */
+
+@media screen and (max-width:992px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+/* Планшеты и нэтбуки */
+
+/* IPAD AIR и Galaxy Tab  */
+
+@media screen and (max-width:820px) {
+    .container {
+        max-width: 620px;
+    }
+
+    
+
+
+}
+
+/* IPAD AIR и Galaxy Tab  */
+
+
+
+/* IPAD */
+@media screen and (max-width:768px) {
+    .container {
+        max-width: 576px;
+    }
+
+   
+
+}
+
+/* IPAD */
+
+
+/* Mobiles */
+@media screen and (max-width:576px) {
+    .container {
+        max-width: 356px;
+    }
+
+    
+
+    
+
+}
+
+/* Mobiles */
+
+
+/* iphone 13 */
+@media screen and (max-width:375px) {
+    .container {
+        max-width: 295px;
+    }
+}
+
+/* iphone 13 */
+
+/* max-width  - элементы применяют стили от старта указанного размера 
+и его изменения в меньшую сторону */
+
+/* min-width  - элементы применяют стили от старта указанного размера 
+и его изменения в большую сторону */
