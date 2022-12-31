@@ -33,12 +33,12 @@ h1{
 }
 
 
-  .shadow-text:hover{
+.shadow-text:hover{
     color: lightgoldenrodyellow;
     -webkit-text-shadow: 2px 2px 2px #000;
     -moz-text-shadow: 2px 2px 2px #000;
         text-shadow: 2px 2px 2px #000;
-  }
+}
 
 .container {
     position: relative;
@@ -61,6 +61,9 @@ h1{
     border-radius: 5px;
     mix-blend-mode: multiply;
     padding: 15px 20px;
+    max-width: 580px;
+    min-width: 150px;
+    word-wrap:break-word;
     }
 
     @keyframes gradient {
