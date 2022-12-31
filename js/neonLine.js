@@ -10,7 +10,7 @@ window.onresize = function() {
     maxHeight = h*.9
     minHeight = h*.5;
     dots = [];
-    pushDots();
+    // pushDots();
     ctx.globalCompositeOperation = "lighter";
 };
 // Клик по фону
@@ -18,7 +18,7 @@ container.onclick = function(){
     hue = Math.random()*360;
     bgg.style.background = "radial-gradient(ellipse at center, hsla("+hue+",50%,50%,.8) 0%,rgba(0,0,0,0) 100%)";
     dots = [];
-    pushDots();
+    // pushDots();
 }
 dots=[{}];
 md = 100;
@@ -43,7 +43,8 @@ function pushDots(num){
             m:Math.random()*(maxSpeed-minSpeed)+minSpeed
         });
     }
-}pushDots();
+}
+// pushDots();
 function render(){
     ctx.clearRect(0,0,w,h);
     for(i=1; i<dots.length; i++){

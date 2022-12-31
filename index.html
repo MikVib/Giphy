@@ -7,6 +7,7 @@
     <title>GIPHY</title>
     <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAD6/v0AAAAAAP7//wAJCQkA+Pz8APr8/AD8/v4A8/T0APn+/QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmYkZmZmZmZmZmMWZmZmZmZmZoFmZmZmZmZmYBZmZmZmYXYmFmZmZmZhZRYmZmZmZmZmFmJmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" rel="icon" type="image/x-icon" />
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/range.css">
     <link rel="stylesheet" href="./css/media.css">
 </head>
 
@@ -18,10 +19,20 @@
         <canvas id="canvas"></canvas>
         <div class="control">
             
-            <input type="text" class="text" placeholder="Enter to search" required>
-            <input type="number" class="count" id="count" value="1" min="0" required>
-            <input type="range" class="range" id="range" min="0" max="10" list="tickmarks" value="1" oninput="" required>
-            <datalist id="tickmarks">
+            <input type="text" class="text" placeholder="Enter to search" value="gif" required >
+            
+            <!-- <input type="range" class="range" id="range" min="0" max="10" list="tickmarks" value="1" oninput="" required> -->
+<div class="range-wrap">
+    <div class="range-slider">
+        <div class="label-range"><input type="number" class="count" id="count" value="1" min="0" oninput="funI()" required></div>
+        <input id="range" type="range" name="range" class="range" min="1" max="10" step="1" value="1" oninput="funR()">
+        <!-- <div class="label-range">от 4 до 32 с шагом 2</div>
+        <input id="range2" type="range" name="range2" min="4" max="32" step="2" value="16" />
+        <div class="label-range">от 0 до 100 с шагом 5</div>
+        <input id="range3" type="range" name="range3" min="0" max="100" step="5" value="50" /> -->
+    </div>
+</div>
+            <!-- <datalist id="tickmarks">
                 <option value="0" label="0">
                 <option value="1" label="1">
                 <option value="2" label="2">
@@ -33,11 +44,11 @@
                 <option value="8" label="8">
                 <option value="9" label="9">
                 <option value="10" label="10">
-            </datalist>
+            </datalist> -->
 
             <!-- <input type="text"> -->
 
-            <button class="search">Search</button>
+            <button class="search" id="search">Search</button>
 
         </div>
 
@@ -55,8 +66,9 @@
     </div>
 
 
-    <script src="./neonLine.js"></script>
-    <script src="./script.js"></script>
+    <script src="./js/neonLine.js"></script>
+    <script src="./js/range.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

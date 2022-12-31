@@ -13,6 +13,10 @@
     .container {
         max-width: 816px;
     }
+
+    .col{
+        width: 33.333333%;
+    }
 }
 
 /* IPAD-PRO */
@@ -22,6 +26,10 @@
 @media screen and (max-width:992px) {
     .container {
         max-width: 768px;
+    }
+
+    .col{
+        width: 33.333333%;
     }
 }
 
@@ -34,7 +42,9 @@
         max-width: 620px;
     }
 
-    
+    .col{
+        width: 33.333333%;
+    }
 
 
 }
@@ -49,7 +59,9 @@
         max-width: 576px;
     }
 
-   
+    .col{
+        width: 50%;
+    }
 
 }
 
@@ -62,7 +74,9 @@
         max-width: 356px;
     }
 
-    
+    .col{
+        width: 100%;
+    }
 
     
 
@@ -76,6 +90,10 @@
     .container {
         max-width: 295px;
     }
+    .col{
+        width: 100%;
+    }
+
 }
 
 /* iphone 13 */
